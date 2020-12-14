@@ -1,0 +1,43 @@
+/*
+ * main.cpp
+ *
+ *  Created on: ??ş/??ş/????
+ *      Author: Admin
+ */
+
+
+#include"scanner.h"
+
+
+
+int main (void){
+
+
+string x; //="fact := 1;";
+
+
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+
+
+
+while(cin>>x,x!="end"){
+
+ get_word( x);
+	cout<<t_value<<" , ";
+	cout<<t_type<<endl;
+}
+
+
+for(int i=0;i<t_value.size();i++){
+
+	cout<<t_value[i]<<" , ";
+		cout<<t_type[i]<<endl;
+}
+
+
+
+
+	return 0;
+
+}

@@ -1,0 +1,8 @@
+read , Reserved_word
+x , ID
+; , Symbol
+if , Reserved_word
+0 , number
+< , Symbol
+x , ID
+then , Reserved_word

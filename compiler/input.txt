@@ -1,0 +1,9 @@
+read x;   
+     if  0 < x   then     { comment }
+        fact  :=1;
+        repeat 
+           fact  :=fact*x;
+            x  := x  -  1
+        until  x  =  0;  { comment }
+        write  fact   
+     end  

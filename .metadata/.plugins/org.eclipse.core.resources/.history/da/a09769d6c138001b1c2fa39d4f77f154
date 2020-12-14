@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: ??þ/??þ/????
+ *      Author: Admin
+ */
+
+
+#include"scanner.h"
+
+
+
+int main (void){
+
+
+
+
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+
+
+	return 0;
+
+}

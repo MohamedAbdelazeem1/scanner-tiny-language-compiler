@@ -1,0 +1,32 @@
+/*
+ * scanner.h
+ *
+ *  Created on: ??þ/??þ/????
+ *      Author: Admin
+ */
+
+#ifndef SCANNER_H_
+#define SCANNER_H_
+
+
+#include <iostream>
+#include <string>
+#include<vector>
+#include<algorithm>
+#include<string>
+#include<cstring>
+
+using namespace std ;
+
+
+ extern vector<string> t_value;
+ extern vector<string> t_type;
+
+
+/* check word is  1 --> res_word , -1 ----> other  */
+int is_res_word(string word);
+/* get the word and check it is Reserved word  , symbols  , ID or number  and store  token value and type  */
+void get_word( string word);
+
+
+#endif /* SCANNER_H_ */

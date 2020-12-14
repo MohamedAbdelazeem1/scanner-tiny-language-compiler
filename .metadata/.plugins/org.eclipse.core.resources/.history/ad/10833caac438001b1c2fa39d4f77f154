@@ -1,0 +1,21 @@
+/*
+ * scanner.cpp
+ *
+ *  Created on: ??þ/??þ/????
+ *      Author: Admin
+ */
+
+#include"scanner.h"
+
+string Res_Word[]={"if","then","else","end","repeat","until","read","write"};
+string symbols[]={"+","-","*","/","=","<",">","(",")",";",":="};
+
+void get_line( string str){
+
+
+
+
+
+}
+
+

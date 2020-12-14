@@ -1,0 +1,414 @@
+??:??:?? **** Rebuild of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp:16:8: error: expected constructor, destructor, or type conversion before '(' token
+ freopen("input.txt", "r", stdin);
+        ^
+..\scanner.cpp:17:8: error: expected constructor, destructor, or type conversion before '(' token
+ freopen("output.txt", "w", stdout);
+        ^
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Command canceled
+??:??:?? **** Rebuild of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:37:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:67:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'char is_res_word(std::__cxx11::string)':
+..\scanner.cpp:107:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+scanner.o:scanner.cpp:(.bss+0x0): multiple definition of `Res_Word[abi:cxx11]'
+main.o:main.cpp:(.bss+0x0): first defined here
+scanner.o: In function `get_word(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+D:\4th computer\compiler\project\compiler\Debug/../scanner.cpp:28: multiple definition of `symbols[abi:cxx11]'
+main.o:D:\4th computer\compiler\project\compiler\Debug/../main.cpp:33: first defined here
+scanner.o: In function `get_word(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+D:\4th computer\compiler\project\compiler\Debug/../scanner.cpp:43: multiple definition of `t_value[abi:cxx11]'
+main.o:D:\4th computer\compiler\project\compiler\Debug/../main.cpp:42: first defined here
+scanner.o: In function `get_word(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+D:\4th computer\compiler\project\compiler\Debug/../scanner.cpp:43: multiple definition of `t_type[abi:cxx11]'
+main.o:c:/mingw/include/c++/8.1.0/iostream:74: first defined here
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:73:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'char is_res_word(std::__cxx11::string)':
+..\scanner.cpp:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:73:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: At global scope:
+..\scanner.cpp:94:5: error: ambiguating new declaration of 'int is_res_word(std::__cxx11::string)'
+ int is_res_word(string word){
+     ^~~~~~~~~~~
+In file included from ..\scanner.cpp:8:
+..\scanner.h:27:6: note: old declaration 'char is_res_word(std::__cxx11::string)'
+ char is_res_word(string word);
+      ^~~~~~~~~~~
+..\scanner.cpp: In function 'int is_res_word(std::__cxx11::string)':
+..\scanner.cpp:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:73:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: At global scope:
+..\scanner.cpp:94:5: error: ambiguating new declaration of 'int is_res_word(std::__cxx11::string)'
+ int is_res_word(string word){
+     ^~~~~~~~~~~
+In file included from ..\scanner.cpp:8:
+..\scanner.h:27:6: note: old declaration 'char is_res_word(std::__cxx11::string)'
+ char is_res_word(string word);
+      ^~~~~~~~~~~
+..\scanner.cpp: In function 'int is_res_word(std::__cxx11::string)':
+..\scanner.cpp:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:73:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'int is_res_word(std::__cxx11::string)':
+..\scanner.cpp:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:73:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:43:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:80:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:96:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:87:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:103:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:87:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:103:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:99:6: error: 'i' was not declared in this scope
+   if(i+1 == word.length()&& wflag ==0){
+      ^
+..\scanner.cpp: At global scope:
+..\scanner.cpp:111:1: error: expected declaration before '}' token
+ }
+ ^
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:87:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:103:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:110:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:126:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void get_word(std::__cxx11::string)':
+..\scanner.cpp:50:16: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int i=0;i<word.length();i++){ //
+               ~^~~~~~~~~~~~~~
+..\scanner.cpp:112:11: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+    if(i+1 == word.length()&& wflag ==0){
+       ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:128:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void ID_or_Num(std::__cxx11::string)':
+..\scanner.cpp:57:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<word.length();i++){  /*character word loop  */
+              ~^~~~~~~~~~~~~~
+..\scanner.cpp:102:10: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   if(i+1 == word.length()&& wflag ==0){
+      ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:113:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:31:14: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+ for(int i=0;i<t_value.size();i++){
+             ~^~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Rebuild of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void ID_or_Num(std::__cxx11::string)':
+..\scanner.cpp:69:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<word.length();i++){  /*character word loop  */
+              ~^~~~~~~~~~~~~~
+..\scanner.cpp:114:10: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   if(i+1 == word.length()&& wflag ==0){
+      ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:125:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:26:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<t_value.size();i++){
+              ~^~~~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+Info: Nothing to build for compiler
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:26:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<t_value.size();i++){
+              ~^~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void ID_or_Num(std::__cxx11::string)':
+..\scanner.cpp:67:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<word.length();i++){  /*character word loop  */
+              ~^~~~~~~~~~~~~~
+..\scanner.cpp:112:10: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   if(i+1 == word.length()&& wflag ==0){
+      ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:123:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+scanner.o:scanner.cpp:(.bss+0x0): multiple definition of `t_value[abi:cxx11]'
+main.o:main.cpp:(.bss+0x0): first defined here
+scanner.o: In function `std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size() const':
+D:\4th computer\compiler\project\compiler\Debug/../scanner.cpp:31: multiple definition of `t_type[abi:cxx11]'
+main.o:D:\4th computer\compiler\project\compiler\Debug/../main.cpp:16: first defined here
+collect2.exe: error: ld returned 1 exit status
+scanner.o:scanner.cpp:(.bss+0x0): multiple definition of `t_value[abi:cxx11]'
+main.o:main.cpp:(.bss+0x0): first defined here
+scanner.o: In function `std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size() const':
+D:\4th computer\compiler\project\compiler\Debug/../scanner.cpp:31: multiple definition of `t_type[abi:cxx11]'
+main.o:D:\4th computer\compiler\project\compiler\Debug/../main.cpp:16: first defined here
+??:??:?? **** Incremental Build of configuration Debug for project compiler ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:26:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<t_value.size();i++){
+              ~^~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o scanner.o "..\\scanner.cpp" 
+..\scanner.cpp: In function 'void ID_or_Num(std::__cxx11::string)':
+..\scanner.cpp:69:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<word.length();i++){  /*character word loop  */
+              ~^~~~~~~~~~~~~~
+..\scanner.cpp:114:10: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   if(i+1 == word.length()&& wflag ==0){
+      ~~~~^~~~~~~~~~~~~~~~
+..\scanner.cpp: In function 'bool is_num(std::__cxx11::string)':
+..\scanner.cpp:125:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i=0;i<num.length();i++){
+              ~^~~~~~~~~~~~~
+g++ -o compiler.exe main.o scanner.o 
+Info: Nothing to build for compiler

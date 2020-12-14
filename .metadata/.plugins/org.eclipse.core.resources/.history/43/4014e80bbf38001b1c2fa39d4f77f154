@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: ??þ/??þ/????
+ *      Author: Admin
+ */
+
+
+
+
+int main (void){
+
+
+
+
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+
+
+	return 0;
+
+}

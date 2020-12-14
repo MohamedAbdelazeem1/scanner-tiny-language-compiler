@@ -1,0 +1,150 @@
+/*
+ * scanner.cpp
+ *
+ *  Created on: 7/12/2020
+ *
+ */
+
+#include"scanner.h"
+
+void ID_or_Num(string word);
+bool is_num(string num);
+int is_res_word(string word);
+
+
+int g_comment_flag=0;
+
+
+
+string Res_Word[]={"if","then","else","end","repeat","until","read","write"};
+string symbols[]={"+","-","*","/","=","<",">","(",")",";",":="};
+
+int Res=8;///sizeof(Res_Word)/sizeof(Res_Word[0]);//Res_Word.size()
+int sym=11;//symbols.size();
+
+
+vector<string> t_value;
+vector<string> t_type;
+
+
+/* get the word and check it is Reserved word  , symbols  , ID or number
+ * and store  token value and token type
+ * */
+void get_word( string word){// if x:=5;
+
+	if(word=="{"){
+
+		g_comment_flag=1;
+	}
+
+	else if( g_comment_flag==0){
+
+	int type=is_res_word(word);
+
+	if(type==1){ // Res_Word
+		t_value.push_back(word);
+		t_type.push_back("Reserved_word");
+
+	}
+	else if(type==0){ //symbol
+		t_value.push_back(word);
+		t_type.push_back("Symbol");
+
+	}
+	else if( is_num(word)){  //a='65'
+		t_value.push_back(word);
+		t_type.push_back("number");
+
+	}
+	else if(type==-1){
+		ID_or_Num( word);
+	}
+}
+	else if(word=="}"){
+			g_comment_flag=0;
+		}
+}
+/* to check the word is number or ID and store it in vectors  */
+void ID_or_Num(string word){
+
+	int wflag =0; /* to update the  begin of the remain word */
+	for(int i=0;i<word.length();i++){  /*character word loop  */
+		for(int j=0;j<sym;j++){  /* symbols loop */
+			if((word[i]==symbols[j][0])){  /* check on all symbols and ":" */
+
+				if((word.substr(i,2)==symbols[j])){/* check on :=  symbol */
+
+					if(wflag!=i){ /* check if the begin word is symbols or no EX: ( <=5; )  */
+						if( is_num(word.substr(wflag,i-wflag))){
+							t_value.push_back(word.substr(wflag,i-wflag));
+							t_type.push_back("number");
+
+						}
+						else{
+							t_value.push_back(word.substr(wflag,i-wflag));
+							t_type.push_back("ID");
+						}
+					}
+					t_value.push_back(word.substr(i,2));
+					t_type.push_back("Symbol");
+					i++;
+					wflag =i+1;
+
+				}
+				else{
+
+					if(wflag!=i){
+						if( is_num(word.substr(wflag,i-wflag))){
+							t_value.push_back(word.substr(wflag,i-wflag));
+							t_type.push_back("number");
+
+						}
+						else{
+							t_value.push_back(word.substr(wflag,i-wflag));
+							t_type.push_back("ID");
+						}
+					}
+
+					t_value.push_back(word.substr(i,1));
+					t_type.push_back("Symbol");
+					wflag =i+1;
+				}
+
+			}
+
+		}
+		if(i+1 == word.length()&& wflag ==0){
+			t_value.push_back(word);
+			t_type.push_back("ID");
+
+		}
+
+	}
+
+}
+/* to check the word is number or no */
+bool is_num(string num){
+	for(int i=0;i<num.length();i++){
+		/*compare character with character Ex: 65='65' , a!='65' */
+		if(!(num[i]>='0' && num[i]<='9')){
+			return false;
+		}
+	}
+	return true;
+}
+
+/* check word is  1 --> res_word ,  -1 ----> other  */
+int is_res_word(string word){
+
+	for(int i=0;i<Res;i++){
+		if(word == Res_Word[i]){
+			return 1;
+		}
+	}
+	return -1;
+
+}
+
+
+
+

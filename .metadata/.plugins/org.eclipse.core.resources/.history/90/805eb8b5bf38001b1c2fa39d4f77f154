@@ -1,0 +1,24 @@
+/*
+ * scanner.h
+ *
+ *  Created on: ??þ/??þ/????
+ *      Author: Admin
+ */
+
+#ifndef SCANNER_H_
+#define SCANNER_H_
+
+
+#include <iostream>
+#include <string>
+#include<vector>
+#include<algorithm>
+#include<string>
+#include<cstring>
+
+
+
+
+
+
+#endif /* SCANNER_H_ */
